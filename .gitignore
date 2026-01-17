@@ -1,0 +1,107 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.egg-info/
+*.egg
+*.log
+*.sqlite3
+*.db
+*.env
+.env.*
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Streamlit
+.streamlit/
+
+# VS Code
+.vscode/
+
+# Build
+build/
+dist/
+*.bak
+*.tmp
+*.swp
+*.lock
+wheels/
+
+# Test & Coverage
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+.cache/
+
+# Virtual Environments
+venv/
+.env/
+.envrc
+.mypy_cache/
+.venv
+
+# Data & Indexes
+faiss_index/
+*.faiss
+*.npy
+*.npz
+*.csv
+*.tsv
+*.xlsx
+*.pdf
+examples/sample_text.txt
+examples/sample.pdf
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+*.orig
+*.rej
+
+# Ignore secrets
+secrets.*
+
+# Ignore SonarQube
+.sonar/
+
+# Ignore pip
+pip-wheel-metadata/
+__pypackages__/
+
+# Ignore coverage
+coverage.xml
+
+# Ignore language server
+.pyright/
+
+# Ignore cache
+.cache/
+
+# Ignore test outputs
+junit-*.xml
+
+# Ignore logs
+*.log
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore backup files
+*.bak
+
+# Ignore editor swap files
+*.swp
+
+# Ignore Python history
+.python_history
+
+# Ignore notebook checkpoints
+.ipynb_checkpoints/

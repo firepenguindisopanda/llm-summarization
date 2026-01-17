@@ -1,0 +1,54 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[project]
+name = "llm-summarization-v2"
+version = "0.1.0"
+description = "Streamlit application for PDF document summarization using NVIDIA LangChain NIM endpoints"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "streamlit>=1.28.0",
+    "langchain-nvidia-ai-endpoints>=0.1.0",
+    "python-dotenv>=1.0.0",
+    "pypdf>=4.0.0",
+    "langchain-text-splitters>=0.1.0",
+    "langchain-community>=0.1.0",
+    "tenacity>=8.2.0",
+    "cachetools>=5.3.0",
+    "nest-asyncio>=1.5.0",
+    "faiss-cpu>=1.13.2",
+    "pinecone>=8.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    # Linting & Code Quality
+    "ruff>=0.3.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+    "mypy>=1.8.0",
+
+    # Testing
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "pytest-mock>=3.12.0",
+    "pytest-asyncio>=0.21.0",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "ruff>=0.3.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+    "mypy>=1.8.0",
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "pytest-mock>=3.12.0",
+    "pytest-asyncio>=0.21.0",
+    "langchain-chroma>=1.1.0",
+]
