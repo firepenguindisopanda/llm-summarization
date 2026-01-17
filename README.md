@@ -90,3 +90,6 @@ See LICENSE file if present.
 ## Limitations
 
 - large pdfs take a long time to summarize and sometimes the application restarts, so it begins extracting process all over again, it extracts then summarizes
+
+> generate requirements txt file from pyproject toml file
+- `uv pip compile pyproject.toml -o requirements.txt`
